@@ -12,3 +12,14 @@ header .container{
     display: flex;
     justify-content: space-between;
 }
+/* .CONTAINER E .LOGO RECEBEM O MESMO TAMANHO DE HEIGHT */
+
+header .logo{
+   width: 8vw;
+   height: 5vw;
+}
+
+header .logo .logo_img{
+    margin-top:1.2vw;
+    width: 7.5vw;
+}
