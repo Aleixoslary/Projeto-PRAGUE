@@ -11,6 +11,7 @@ header .container{
     height: 5vw;
     display: flex;
     justify-content: space-between;
+    
 }
 /* .CONTAINER E .LOGO RECEBEM O MESMO TAMANHO DE HEIGHT */
 
@@ -22,4 +23,21 @@ header .logo{
 header .logo .logo_img{
     margin-top:1.2vw;
     width: 7.5vw;
+}
+
+header .menu{
+    padding-top: 2vw;
+    animation-delay: 2s;
+}
+
+header .menu a {
+    color:gray;
+    font-size:.7vw;
+    padding-right:2vw;
+    transition-duration: 300ms;
+}
+
+header .menu a:hover, header .menu a:active, header .menu a:focus{
+    color: #fff;
+    transition-duration: 300ms; 
 }
