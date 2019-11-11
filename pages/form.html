@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>FORM PRAGUE</title>
+        <!-- LOGO NO TITLE DO DOC -->
+        <link rel="icon" href="../images/favicon.png" type="image/png" sizes="32x32">
+
+        <!-- ANIMATE.CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+        <!-- FONTAWESOME -->
+        <link href="../vendor/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/banner.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/projects.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/pageOne.css">
+        <link rel="stylesheet" href="../css/form.css">
+    </head>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" class="logo_img" alt="Logo Prague">
+            </div>
+            <nav class="menu">
+                <a href="#"><i class="fas fa-home icon"></i>HOME</a>
+                <a href="#"><i class="fas fa-file-alt icon"></i>PAGES</a>
+                <a href='#projects'><i class="fas fa-briefcase icon"></i>PROJECTS</a>
+                <a href="#"><i class="fas fa-briefcase icon"></i>PROJECTS DETAILS</a>
+                <a href="#"><i class="fas fa-cogs icon"></i>SERVICES</a>
+                <a href="#"><i class="fab fa-blogger icon"></i>BLOG</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id=form>
+        <div class="bord">
+            <input type="email" id="email" placeholder="email" onkeyup="inserir()" /><br>
+
+            <input type="password" id="senha" placeholder="senha" onkeyup="inserir()"/><br>
+            <button onblur="enviar()" class="btn_form" id=button>ENVIAR</button>
+        </div>
+    </section>
+    
+    <script>
+        var senha = document.getElementById('senha')
+        var botao = document.getElementById('button')
+
+        botao.disabled = true;
+
+        function inserir(){
+            var password = senha.value;
+            
+            if (password.length >5){
+                botao.style.backgroundColor="green"
+                alert("Sucesso")
+            }
+        }
+
+  </script>
+</body>
+
+</html>

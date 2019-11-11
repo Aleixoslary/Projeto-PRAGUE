@@ -1,0 +1,28 @@
+#form{
+    padding-top: 25vw;
+    text-align: center;
+    color: white;
+    background-image: url(../images/header.jpg);
+    height:24vw;
+    background-repeat: no-repeat;
+}
+
+#form .bord{
+    border: 2px solid black;
+    width: 15vw;
+    margin: auto;
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+}
+#form #button{
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    background-color:red;
+    color: white;
+    border:none;
+    margin-top: 1vw;
+}
+
+#form input{
+    /* padding: 0.5vw 1vw 0.5vw 1vw; */
+    margin-top: 1vw;
+}
