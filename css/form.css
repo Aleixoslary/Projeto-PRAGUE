@@ -1,15 +1,22 @@
+
 #form{
-    padding-top: 25vw;
+    background-image: url(../images/form.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20vw;
     text-align: center;
     color: white;
-    background-image: url(../images/header.jpg);
-    height:24vw;
+    height:35vw;
     background-repeat: no-repeat;
+}
+.blur{
+    background-color:rgba(0,0,0,0.3);
 }
 
 #form .bord{
-    border: 2px solid black;
-    width: 15vw;
+    border: 5px solid black;
+    width: 20vw;
+    height: 10vw;
     margin: auto;
     padding-bottom: 3vw;
     padding-top: 3vw;
@@ -25,4 +32,6 @@
 #form input{
     /* padding: 0.5vw 1vw 0.5vw 1vw; */
     margin-top: 1vw;
+    height: 2vw;
+    width: 10vw;
 }

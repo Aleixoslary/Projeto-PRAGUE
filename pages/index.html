@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="../css/projects.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/pageOne.css">
+        <link rel="stylesheet" href="../css/form.css">
     </head>
 
     <body>
@@ -34,8 +35,9 @@
                     <a href="#"><i class="fas fa-file-alt icon"></i>PAGES</a>
                     <a href='#projects'><i class="fas fa-briefcase icon"></i>PROJECTS</a>
                     <a href="#"><i class="fas fa-briefcase icon"></i>PROJECTS DETAILS</a>
-                    <a href="#"><i class="fas fa-cogs icon"></i>SERVICES</a>
+                    <a href='#form'><i class="fas fa-cogs icon"></i>SERVICES</a>
                     <a href="#"><i class="fab fa-blogger icon"></i>BLOG</a>
+
                 </nav>
             </div>
         </header>
@@ -58,7 +60,7 @@
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <div class="blur_img"><a href="#"></a><img src="../images/card1.jpg" class="card_img blur_img" alt="mansão com vista para piscina"></a></div>
+                        <div class="blur_img"><a href="#"><img src="../images/card1.jpg" class="card_img blur_img" alt="mansão com vista para piscina"></a></div>
                         <h3>Seascape Villa</h3>
                         <p>Aqaba, Jordan</p>
                     </div>
@@ -90,6 +92,29 @@
                 </div>
             </div>
         </section>
-
+        <section id=form>
+                <div class="bord">
+                    <input type="email" id="email" placeholder="email" onkeyup="inserir()" /><br>
+                    <input type="password" id="senha" placeholder="senha" onkeyup="inserir()" /><br>
+                    <button onblur="enviar()" class="btn_form" id=button>ENVIAR</button>
+                </div>
+            </section>
+        </main>
+        <script>
+            var senha = document.getElementById('senha')
+            var botao = document.getElementById('button')
+    
+            botao.disabled = true;
+    
+            function inserir() {
+                var password = senha.value;
+    
+                if (password.length > 5) {
+                    botao.style.backgroundColor = "green"
+                    alert("Sucesso")
+                }
+            }
+    
+        </script>
     </body>
 </html>

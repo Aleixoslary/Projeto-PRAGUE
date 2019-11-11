@@ -4,6 +4,8 @@
 #banner{
     background-image: url(../images/header.jpg);
     height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #banner .blur{
     background-color:rgba(0,0,0,0.3);
