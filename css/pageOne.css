@@ -103,9 +103,10 @@
     background-color: black;
 }
 
-#projects .card_img:hover{
+#projects .card_img:hover {
     width: 370px;
     height: 300px;
     opacity: 0.5;
     transition-duration: 300ms;
 }
+
